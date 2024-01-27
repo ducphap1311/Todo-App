@@ -1,0 +1,231 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* Các màu chính */
+  --clr-primary-1: #5c8dff;
+  --clr-primary-2: #4b73ff;
+  --clr-primary-3: #3a5aff;
+  --clr-primary-4: #2941ff;
+  --clr-primary-5: #1838ff;
+  --clr-primary-6: #102bdc;
+  --clr-primary-7: #0b1f9a;
+  --clr-primary-8: #061357;
+  --clr-primary-9: #020717;
+
+  /* Màu chữ */
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-grey: #777777;
+
+  /* Các biến khác */
+  --transition: all 0.3s ease-in-out;
+  --border-radius: 8px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.6;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--clr-primary-5);
+}
+
+a:hover {
+  color: var(--clr-primary-4);
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+}
+
+/*
+=============== 
+Grocery List
+===============
+*/
+
+.section-center {
+  background: var(--clr-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  padding: 2rem;
+}
+
+.section-center:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  letter-spacing: 1px;
+}
+
+.alert-danger {
+  color: var(--clr-white);
+  background: #ff4d4d;
+}
+
+.alert-success {
+  color: var(--clr-white);
+  background: #5cb85c;
+}
+
+.grocery-form h3 {
+  color: var(--clr-primary-1);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.grocery {
+  padding: 0.75rem 1rem;
+  background: var(--clr-grey);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border: none;
+  font-size: 1rem;
+  color: var(--clr-black);
+}
+
+.submit-btn {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background: var(--clr-primary-4);
+}
+
+.grocery-container {
+  margin-top: 2rem;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  text-transform: capitalize;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.grocery-item:hover {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-white);
+}
+
+.title {
+  margin-bottom: 0;
+  color: var(--clr-black);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.edit-btn {
+  color: var(--clr-primary-5);
+}
+
+.edit-btn:hover {
+  color: var(--clr-primary-4);
+}
+
+.delete-btn {
+  color: var(--clr-primary-5);
+}
+
+.delete-btn:hover {
+  color: var(--clr-primary-4);
+}
+
+.clear-btn {
+  text-transform: capitalize;
+  width: 100%;
+  height: 2.5rem;
+  background: var(--clr-red);
+  color: var(--clr-white);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.clear-btn:hover {
+  background: #ff4d4d;
+}
