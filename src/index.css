@@ -110,6 +110,7 @@ Grocery List
   font-size: 1rem;
   border-radius: var(--border-radius);
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 .alert-danger {
@@ -175,10 +176,6 @@ Grocery List
   cursor: pointer;
 }
 
-.grocery-item:hover {
-  background-color: var(--clr-primary-1);
-  color: var(--clr-white);
-}
 
 .title {
   margin-bottom: 0;
@@ -200,16 +197,13 @@ Grocery List
   color: var(--clr-primary-5);
 }
 
-.edit-btn:hover {
-  color: var(--clr-primary-4);
-}
 
 .delete-btn {
-  color: var(--clr-primary-5);
+  color: #132495;
 }
 
 .delete-btn:hover {
-  color: var(--clr-primary-4);
+  color: red;
 }
 
 .clear-btn {

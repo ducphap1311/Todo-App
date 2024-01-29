@@ -73,6 +73,7 @@ function App() {
             className='grocery'
             placeholder='Task...'
             value={name}
+            style={{backgroundColor: 'white', border: "2px solid black"}}
             onChange={(e) => setName(e.target.value)}
           />
           <button type='submit' className='submit-btn'>
